@@ -1,6 +1,6 @@
 <template>
   <div>
-    梅安森前端项目框架
+    vue3项目框架
   </div>
 </template>
 
