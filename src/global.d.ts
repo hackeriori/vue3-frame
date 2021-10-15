@@ -1,3 +1,4 @@
+//后端接口
 declare const baseAPI: string;
 declare const To: typeof import('./server/awaitTo').default;
 
