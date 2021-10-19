@@ -17,5 +17,9 @@ export default defineComponent({
 })
 </script>
 
+<style lang="less">
+@import "./less/ls";
+</style>
+
 <style>
 </style>
