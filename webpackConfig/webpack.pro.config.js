@@ -4,6 +4,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin') // 引入压缩插件
 const {resolve} = require('path')
 const name = 'oneMap';
+
 module.exports = {
   //这里只定义一个入口，html通过index.ts带入，定义两个下面的output会错误
   entry: resolve(__dirname, '../out/index.ts'),
