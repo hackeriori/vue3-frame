@@ -17,11 +17,12 @@
 <div id="app"></div>
 <script src="./lib/vue.runtime.global.prod.js"></script>
 <script src="./lib/element/index.full.min.js"></script>
+<script src="./lib/element/locale/zhCn.js"></script>
 <script src="./lib/axios.min.js"></script>
 <script src="./lib/awaitTo.js"></script>
 <script src="./oneMap.js"></script>
 <script>
-  Vue.createApp(OneMap).use(ElementPlus).mount('#app');
+  Vue.createApp(OneMap).use(ElementPlus, {locale: ElementPlus.lang.zhCn}).mount('#app');
 </script>
 </body>
 </html>
