@@ -8,7 +8,7 @@
 import {defineComponent} from 'vue'
 import setVersion from "./version";
 
-setVersion()
+setVersion();
 
 export default defineComponent({
   setup() {
