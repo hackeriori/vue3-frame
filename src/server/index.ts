@@ -12,8 +12,8 @@ to = new To(<T>(x: AxiosResponse<APIResponse<T>>) => {
     to.showMessage(x.data.info);
 });
 
+axiosInstance.defaults.baseURL = baseAPI;
 const token = localStorage.getItem('TOKEN');
-
 if (token) {
   axiosInstance.defaults.headers.common['token'] = token;
 }
