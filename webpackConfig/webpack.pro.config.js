@@ -69,7 +69,7 @@ module.exports = {
           comments: false,
         },
         compress: {
-          drop_console: true,
+          drop_console: false,
           drop_debugger: true,
           // pure_funcs: ["console.log", 'debugger']
         }
