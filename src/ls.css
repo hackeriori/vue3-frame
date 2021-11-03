@@ -1,67 +1,67 @@
-// flex左右排列
+.ls-abs-outer {
+  position: relative;
+}
+.ls-abs-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .ls-flex {
   display: flex;
 }
-
-// flex上下排列
 .ls-flexV {
   display: flex;
   flex-direction: column;
 }
-
-// flex左右排列换行
 .ls-flex-wap {
-  .ls-flex;
+  display: flex;
   flex-wrap: wrap;
 }
-
-// flex上下排列换行
 .ls-flexV-wap {
-  .ls-flexV;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
-
-// flex居中
 .ls-flex-center {
-  .ls-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-// flex左右排列只垂直居中
 .ls-flex-centerV {
-  .ls-flex;
+  display: flex;
   align-items: center;
 }
-
-// flex上下排列只水平居中
 .ls-flexV-centerH {
-  .ls-flexV;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-
-// flex盒模型下所有的div不缩小
-.ls-flex-unShrink {
-  > div {
-    flex-shrink: 0;
-  }
+.ls-flex-unShrink > div {
+  flex-shrink: 0;
 }
-
-// 应用div使得它填充剩余主轴空间
 .ls-flexItem-grow {
   flex-grow: 1;
   width: 0;
 }
-
 .ls-flexItem-growV {
   flex-grow: 1;
   height: 0;
 }
-
 .ls-flexItem-unShrink {
   flex-shrink: 0;
 }
-
 .ls-flex-between {
   justify-content: space-between;
+}
+.height100 {
+  height: 100%;
+}
+.unWarpText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.textCenter {
+  text-align: center;
 }

@@ -5,8 +5,9 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import {defineComponent} from 'vue';
 import setVersion from "./version";
+import './ls.css';
 
 setVersion();
 
@@ -16,10 +17,6 @@ export default defineComponent({
   }
 })
 </script>
-
-<style lang="less">
-@import "./less/ls";
-</style>
 
 <style>
 </style>
